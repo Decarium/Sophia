@@ -1,0 +1,38 @@
+/* Normalize to reset all css */
+@import "sanitize.css";
+
+/* Import Variables */
+@import "./variables.css";
+
+body {
+  line-height: $base-line-height;
+  color: $base-font-color;
+  font-family: $base-font;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.02em;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+}
